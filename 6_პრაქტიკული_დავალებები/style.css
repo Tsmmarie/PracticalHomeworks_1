@@ -1,0 +1,41 @@
+.modal-container {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(5px); /* Subtle blur effect */
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    background: radial-gradient(circle, rgba(0, 0, 0, 0.6) 20%, transparent 70%); /* Shaped background */
+}
+
+.modal {
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    max-width: 400px;
+    text-align: center;
+    position: relative;
+}
+
+.open-button {
+    background-color: #5800fb;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    border: none;
+    margin-left: 45%;
+}
+
+.hidden {
+    display: none;
+}
+
+.modal-container:not(.hidden) {
+    display: flex;
+}
